@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0699)https://wix-visual-data.appspot.com/app/widget?cacheKiller=1491248873504&compId=comp-j0zlflni&deviceType=desktop&height=219&instance=8Vod9Std5eLsxpOOmjTomqORfhS0M2MmF5zL_3BPz4s.eyJpbnN0YW5jZUlkIjoiNThjNzRjMzktMzQyMy00NzIwLTkxOWYtZmMzNmNjMjU0ZDdjIiwic2lnbkRhdGUiOiIyMDE3LTA0LTAzVDE5OjMwOjIwLjQxNFoiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjEwOS4yMDUuMjQ4LjIyMS82MDExNiIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiIyNWVjNjA5MS00ZDA3LTQ0NGQtYjY4Yy01OGZjNGZjOWI1NGEiLCJiaVRva2VuIjoiZjJiNzI2NzgtMjUxYS0wYmI2LTFhMDgtOGE5MjRhYjg1MzdkIiwic2l0ZU93bmVySWQiOiI4N2QxMmE1YS1iNGE3LTQ0OWYtOWVjMi04NTZjZWQ1OTdiZGIifQ&locale=ru&pageId=q5qqc&viewMode=site&vsi=39560041-ad4e-4015-b0bc-654b4d1fe149&width=452 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Visual Data</title>
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap-responsive.min.css" rel="stylesheet">
+    <script type="text/javascript" async="" src="./ga.js"></script><script type="text/javascript" src="./jquery.min.js"></script>
+
+
+
+    <link href="./widget.css" rel="stylesheet" type="text/css">
+    <script src="./widget.js"></script>
+
+    <style wix-style="">
+        body{
+            margin:0;padding:0;background-color: transparent;
+        }
+
+        #theTable > tbody{
+            font:normal normal normal 10px/12px "open sans",sans-serif;
+        }
+        #theTable > thead{
+            font:normal normal normal 11px/13px "open sans",sans-serif;
+        }
+        #theTable > thead > tr > th{
+            color:#24292D;
+            background-color: #C9D0D7;
+            background-image: none;
+            vertical-align: top;
+        }
+        #theTable > tbody > tr {
+            color:#222222;
+        }
+        .footable-row-detail-name {
+            color:#24292D;
+            background-color: #C9D0D7;
+            border: 1px solid #FFFFFF;
+            font:normal normal normal 11px/13px "open sans",sans-serif;
+        }
+        body{
+            border-color: #FFFFFF;
+        }
+        #theTable.isInnerColor{
+            border-top-color: #FFFFFF;
+            border-bottom-color: #FFFFFF;
+
+        }
+        #theTable.isInnerColor{
+            border-right:none;
+            border-left:none;
+        }
+        .footable-row-detail-value {
+            border: 1px solid #FFFFFF;
+            font:normal normal normal 10px/12px "open sans",sans-serif;
+        }
+        .footable-sort-indicator{
+            font:normal normal normal 10px/12px "open sans",sans-serif;
+        }
+
+        tr.footableOdd + tr.footable-row-detail > td > div > table > tbody > tr > td.footable-row-detail-value{
+            background-color: #FFFFFF
+         }
+
+        tr.footableEven + tr.footable-row-detail > td > div > table > tbody > tr > td.footable-row-detail-value{
+            background-color: #CCCCCC;
+        }
+
+        .footableOdd {
+            background-color: #FFFFFF;
+            }
+
+        .footableEven {
+            background-color: #CCCCCC;
+        }
+
+
+        .footable>tbody>tr:hover {
+            background-color: #C9D0D7;
+        }
+
+        .footable,
+        .footable> thead > tr > th,
+        .footable > tbody > tr > td {
+            border-color: #FFFFFF;
+            border-left-color: #FFFFFF;
+        }
+
+        .footable .pagination > ul > li > a{
+            border-color: #FFFFFF;
+        }
+
+        .filter> thead > tr > th,
+        .footable > thead > tr > th,
+        .footable > thead > tr > td {
+            background-color: #FFFFFF;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#C9D0D7));
+            background-image: -webkit-linear-gradient(top, #FFFFFF, #C9D0D7);
+            background-image: -moz-linear-gradient(top, #FFFFFF, #C9D0D7);
+            background-image: -ms-linear-gradient(top, #FFFFFF, #C9D0D7);
+            background-image: -o-linear-gradient(top, #FFFFFF, #C9D0D7);
+            background-image: linear-gradient(to bottom, #FFFFFF, #C9D0D7);
+        }
+        .footable > thead > tr > th,
+        .footable > thead > tr > td {
+            background-color: #C9D0D7;
+        }
+
+
+        .footable > tfoot > tr > th,
+        .footable > tfoot > tr > td {
+            background-color: #FFFFFF;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#C9D0D7), to(#FFFFFF));
+            background-image: -webkit-linear-gradient(top, #C9D0D7, #FFFFFF);
+            background-image: -moz-linear-gradient(top, #C9D0D7, #FFFFFF);
+            background-image: -ms-linear-gradient(top, #C9D0D7, #FFFFFF);
+            background-image: -o-linear-gradient(top, #C9D0D7, #FFFFFF);
+            background-image: linear-gradient(to bottom, #C9D0D7, #FFFFFF);
+        }
+
+        .footable .pagination > ul > .disabled > span,
+        .footable .pagination > ul > .disabled > a,
+        .footable .pagination > ul > .disabled > a:hover,
+        .footable .pagination > ul > .disabled > a:focus {
+            background-color: #C9D0D7;
+            }
+        .footable .pagination > ul > li > a:hover,
+        .footable .pagination > ul > li > a:focus,
+        .footable .pagination > ul > .active > a,
+        .footable .pagination > ul > .active > span {
+            background-color: #6C7A87;
+        }
+        .preview,.error {
+            display:none;
+            background-color:white;
+        }
+        .option {
+            width: 120px;
+        }
+        .searchBox{
+            width: 147px;
+            height: 23px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background-color: rgba(255,255,255,0.8);
+            color:#000;/*#24292D;*/
+            -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+            -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+            box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+            margin-top: 1px;
+            outline: 0;
+            border:0;
+            padding: 0 6px;
+            font-size: 12px;
+        }
+        ::-webkit-input-placeholder {
+            color:#000;/*#24292D;*/
+            opacity:0.5;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+            color:#000;
+            opacity:0.5;
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+            color:#000;
+            opacity:0.5;
+        }
+
+        :-ms-input-placeholder {
+            color:#000;
+            opacity:0.5;
+        }
+         /*       .filter{
+            border-collapse: separate;
+            border-spacing: 0;
+            border-width: 1px 1px 0 1px;
+            border-style: solid;
+            color: #444444;
+            background: #ffffff;
+            margin :0;
+        }
+*/
+        #tableWrapper::-webkit-scrollbar{-webkit-appearance:none;width:10px;height:10px;border:1px solid #FFFFFF}
+        #tableWrapper::-webkit-scrollbar-track{background-color:#FFFFFF}
+        #tableWrapper::-webkit-scrollbar-corner{background-color:#CCCCCC}
+        #tableWrapper::-webkit-scrollbar-thumb{border-radius:5px;background-color:#CCCCCC;border:solid 1px #FFFFFF;}
+/*
+        #tableWrapper::-webkit-scrollbar-thumb:horizontal{border-color:#FFFFFF}
+*/
+        #tableWrapper::-webkit-scrollbar-thumb:hover{background-color:#C9D0D7;}
+
+
+
+    </style>
+
+
+     <script>
+        var settings = {"title":null,"csvUrl":null,"origVersion":null,"viewType":"table","data":{"csvString":"Количество грузчиков,до 4-х часов работы,5 часов работы,6 часов работы,7 часов работы,8 часов работы\n1,1000,1250,1500,1750,2000\n2,2000,2500,3000,3500,4000\n3,3000,3750,4500,5250,6000\n4,4000,5000,6000,7000,8000\n5,5000,6250,7500,8750,10000\n6,6000,7500,9000,10500,12000\n","type":"csvString"},"tableParams":{"columns":6,"columnsOnOff":true,"filter":false,"showHeaderFooter":false,"filterText":"Поиск"},"pieChartParams":{},"columnChartParams":{},"lineChartParams":{},"areaChartParams":null};
+        var endpoint = 'desktop';
+        settings = jQuery.extend({}, settings);
+        var version = '3-08';
+        var pageManager;
+//        google.load("visualization", "1", {packages:["corechart"]});
+    function fixErrorVal(value){
+        if(value.indexOf('"')>=0 || value.indexOf(',')>=0){
+            value = value.replace(/"/g,'""');
+            value = '"'+value+'"';
+        }
+        return value;
+    }
+        $(document).ready(function() {
+            pageManager = new PageManager();
+            pageManager.init(settings,endpoint,
+                {
+                    loaderErrorTitle:fixErrorVal('\u0412\u043E\u0437\u043D\u0438\u043A\u043B\u0438 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u044B \u0441 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u043E\u0439 \u0432\u0430\u0448\u0435\u0439 \u0442\u0430\u0431\u043B\u0438\u0446\u044B.'),
+                    loaderErrorBody:fixErrorVal('\u0423\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C, \u0447\u0442\u043E \u0432\u044B \u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043B\u0438 \u0432\u0441\u0435\u043C \u0438\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u044F\u043C \u043F\u043E \u0434\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0438\u044E \u0442\u0430\u0431\u043B\u0438\u0446\u044B.'),
+                    loaderErrorTitleEmpty:fixErrorVal('\u041E\u0439, \u0432\u0430\u0448\u0430 \u0442\u0430\u0431\u043B\u0438\u0446\u0430 \u043F\u0443\u0441\u0442\u0430.'),
+                    loaderErrorBodyEmpty:fixErrorVal('\u0414\u043E\u0431\u0430\u0432\u044C\u0442\u0435 \u043A\u0430\u043A\u0443\u044E-\u043D\u0438\u0431\u0443\u0434\u044C \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E'),
+                    loaderErrorTitleCsv:fixErrorVal('Oops! The URL you entered does not point to a google spreadsheet or a CSV file.'),
+                    loaderErrorBodyCsv:fixErrorVal('\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u0441\u0441\u044B\u043B\u043A\u0443 \u0438 \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0441\u043D\u043E\u0432\u0430.'),
+                    loaderErrorTitleViewer:fixErrorVal('\u042D\u0442\u0430 \u0442\u0430\u0431\u043B\u0438\u0446\u0430 \u043F\u0443\u0441\u0442\u0430.'),
+                    loaderErrorBodyViewer:fixErrorVal('\u0417\u0434\u0435\u0441\u044C \u043D\u0438\u0447\u0435\u0433\u043E \u043D\u0435\u0442.'),
+                    loaderErrorTitle400:fixErrorVal('\u041E\u0439... \u0423\u043A\u0430\u0437\u0430\u043D\u043D\u0430\u044F \u0432\u0430\u043C\u0438 \u0441\u0441\u044B\u043B\u043A\u0430 \u043D\u0435 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442.'),
+                    loaderErrorBody400:fixErrorVal('\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u0441\u0441\u044B\u043B\u043A\u0443 \u0438 \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0441\u043D\u043E\u0432\u0430.'),
+                    loaderErrorTitle403:fixErrorVal('\u041F\u043E\u0445\u043E\u0436\u0435, \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440 \u0432\u0430\u0448\u0435\u0439 \u0442\u0430\u0431\u043B\u0438\u0446\u044B Google \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u043C\u0438 \u0434\u043E\u0441\u0442\u0443\u043F\u0430.'),
+                    loaderErrorBody403:fixErrorVal('\u0427\u0442\u043E\u0431\u044B \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0442\u0430\u0431\u043B\u0438\u0446\u0443 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0439 \u0434\u043B\u044F \u043E\u0431\u0449\u0435\u0433\u043E \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0430, \u043E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F, \u0437\u0430\u0439\u0434\u0438\u0442\u0435 \u0432 \u00AB\u0418\u0441\u0442\u043E\u0447\u043D\u0438\u043A \u0434\u0430\u043D\u043D\u044B\u0445\u00BB \u0438 \u0441\u043B\u0435\u0434\u0443\u0439\u0442\u0435 \u0438\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u044F\u043C.'),
+                    loaderErrorTitle404:fixErrorVal('\u041E\u0439... \u0423\u043A\u0430\u0437\u0430\u043D\u043D\u044B\u0439 \u0432\u0430\u043C\u0438 \u0430\u0434\u0440\u0435\u0441 \u043D\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442.'),
+                    loaderErrorBody404:fixErrorVal('\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u0441\u0441\u044B\u043B\u043A\u0443 \u0438 \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0441\u043D\u043E\u0432\u0430.'),
+                    loaderErrorTitle500:fixErrorVal('\u041E\u0439... \u0427\u0442\u043E-\u0442\u043E \u043D\u0435 \u0442\u0430\u043A...'),
+                    loaderErrorBody500:fixErrorVal('\u0421\u0435\u0440\u0432\u0435\u0440 \u0441\u043E\u043E\u0431\u0449\u0430\u0435\u0442 \u043E\u0431 \u043E\u0448\u0438\u0431\u043A\u0435 \u043F\u0435\u0440\u0435\u0434\u0430\u0447\u0438 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438.'),
+                    loaderErrorTitle503:fixErrorVal('\u041E\u0439... \u0427\u0442\u043E-\u0442\u043E \u043D\u0435 \u0442\u0430\u043A'),
+                    loaderErrorBody503:fixErrorVal('\u0421\u0435\u0440\u0432\u0435\u0440 \u0441\u043E\u043E\u0431\u0449\u0430\u0435\u0442, \u0447\u0442\u043E \u0442\u0430\u0431\u043B\u0438\u0446\u0430 \u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E \u043E\u0444\u043B\u0430\u0439\u043D, \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0447\u0435\u0440\u0435\u0437 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043C\u0438\u043D\u0443\u0442.'),
+                 },
+                    '8Vod9Std5eLsxpOOmjTomqORfhS0M2MmF5zL_3BPz4s.eyJpbnN0YW5jZUlkIjoiNThjNzRjMzktMzQyMy00NzIwLTkxOWYtZmMzNmNjMjU0ZDdjIiwic2lnbkRhdGUiOiIyMDE3LTA0LTAzVDE5OjMwOjIwLjQxNFoiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjEwOS4yMDUuMjQ4LjIyMS82MDExNiIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiIyNWVjNjA5MS00ZDA3LTQ0NGQtYjY4Yy01OGZjNGZjOWI1NGEiLCJiaVRva2VuIjoiZjJiNzI2NzgtMjUxYS0wYmI2LTFhMDgtOGE5MjRhYjg1MzdkIiwic2l0ZU93bmVySWQiOiI4N2QxMmE1YS1iNGE3LTQ0OWYtOWVjMi04NTZjZWQ1OTdiZGIifQ','comp-j0zlflni', version
+            );
+        });
+
+     </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-46327988-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+<style wix-style="">.Title{ font:normal normal normal 30px/1.1em anton,sans-serif; } .Menu{ font:normal normal normal 16px/1.1em "open sans",sans-serif; } .Page-title{ font:normal normal normal 28px/1.4em impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif; } .Heading-XL{ font:normal normal normal 70px/1.1em anton,sans-serif; } .Heading-L{ font:normal normal normal 34px/1.3em "open sans",sans-serif; } .Heading-M{ font:normal normal normal 22px/1.2em anton,sans-serif; } .Heading-S{ font:normal normal normal 20px/1.3em "open sans",sans-serif; } .Body-L{ font:normal normal normal 16px/1.3em "open sans",sans-serif; } .Body-M{ font:normal normal normal 14px/1.3em "open sans",sans-serif; } .Body-S{ font:normal normal normal 12px/1.3em "open sans",sans-serif; } .Body-XS{ font:normal normal normal 11px/1.3em "open sans",sans-serif; } }</style><link type="text/css" rel="stylesheet" href="./css(1)" id="wix-google-fonts"><link type="text/css" rel="stylesheet" href="./languages.css"><style></style></head>
+
+<body>
+<div class="error">
+    <div id="errorTitle" style="font-weight:bold">&nbsp;</div>
+    <div id="errorData">&nbsp;</div>
+</div>
+<div id="chartTableDiv" style="">
+<table id="filterTable" class="filter outerBorder" style="width: 100%; display: none;">
+    <thead><tr><th colspan="100%" style="height:37px;text-align: center;">
+        
+    </th></tr></thead>
+</table>
+</div>
+<div id="tableWrapper" style="overflow: hidden; max-height: 229px;">
+<table id="theTable" class="footable table outerBorder footable-loaded" style="width: 100%; margin: 0px;">
+<thead><tr>
+<th id="thCol0" data-type="numeric" class="footable-sortable">Количество грузчиков<span class="footable-sort-indicator"></span></th>
+<th id="thCol1" data-type="numeric" class="footable-sortable">до 4-х часов работы<span class="footable-sort-indicator"></span></th>
+<th id="thCol2" data-type="numeric" class="footable-sortable">5 часов работы<span class="footable-sort-indicator"></span></th>
+<th id="thCol3" data-type="numeric" class="footable-sortable">6 часов работы<span class="footable-sort-indicator"></span></th>
+<th id="thCol4" data-type="numeric" class="footable-sortable">7 часов работы<span class="footable-sort-indicator"></span></th>
+<th id="thCol5" data-type="numeric" class="footable-sortable">8 часов работы<span class="footable-sort-indicator"></span></th></tr>
+</thead>
+
+<!--<tbody>-->
+<tr class="footableOdd"><td>1</td><td>1000</td><td>1250</td><td>1500</td><td>1750</td><td>2000</td></tr>
+<tr class="footableEven"><td>2</td><td>2000</td><td>2500</td><td>3000</td><td>3500</td><td>4000</td></tr>
+<tr class="footableOdd"><td>3</td><td>3000</td><td>3750</td><td>4500</td><td>5250</td><td>6000</td></tr>
+<tr class="footableEven"><td>4</td><td>4000</td><td>5000</td><td>6000</td><td>7000</td><td>8000</td></tr>
+<tr class="footableOdd"><td>5</td><td>5000</td><td>6250</td><td>7500</td><td>8750</td><td>10000</td></tr>
+<tr class="footableEven"><td>6</td><td>6000</td><td>7500</td><td>9000</td><td>10500</td><td>12000</td></tr></tbody></table></div>
+<table id="pagerFilter" class="footable footer outerBorder" style="width: 100%; margin: 0px; display: none;">
+    <tfoot id="noPager"><tr><td colspan="100%" style="height:26px;"></td></tr></tfoot>
+</table>
+<div id="chartDiv" tyle="display:none"></div>
+
+
+<script type="text/javascript" src="./wix.min.js"></script>
+
+</body></html>
